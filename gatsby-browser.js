@@ -1,5 +1,7 @@
 /* eslint-disable */
 
+import './src/lib/styles/base.css';
+
 /**
  * Implement Gatsby's Browser APIs in this file.
  *
