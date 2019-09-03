@@ -83,5 +83,14 @@ module.exports = {
         '@typescript-eslint/no-var-requires': 'off',
       },
     },
+    {
+      files: ['**/graphqlTypes.ts'],
+      rules: {
+        camelcase: 'off',
+        '@typescript-eslint/camelcase': 'off',
+        '@typescript-eslint/prefer-interface': 'off',
+        '@typescript-eslint/no-explicit-any': 'off',
+      },
+    },
   ],
 };

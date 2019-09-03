@@ -4,8 +4,10 @@ import styled from 'styled-components';
 
 import Header from './Header';
 
+import { SiteTitleQuery } from '../graphqlTypes';
+
 const GET_SITE_TITLE = graphql`
-  query SiteTitleQuery {
+  query SiteTitle {
     site {
       siteMetadata {
         title
@@ -22,11 +24,11 @@ const BodyWrapper = styled.div`
 `;
 
 const Layout: React.FC = ({ children }) => {
-  const data = useStaticQuery(GET_SITE_TITLE);
+  const { site } = useStaticQuery<SiteTitleQuery>(GET_SITE_TITLE);
 
   return (
     <>
-      <Header siteTitle={data.site.siteMetadata.title} />
+      <Header siteTitle={site.siteMetadata.title} />
       <BodyWrapper>
         <main>{children}</main>
         <footer>

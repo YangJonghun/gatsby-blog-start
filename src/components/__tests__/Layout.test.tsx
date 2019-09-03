@@ -4,8 +4,10 @@ import { useStaticQuery } from 'gatsby'; // mocked
 
 import Layout from '../Layout';
 
+import { SiteTitleQuery } from '../../graphqlTypes';
+
 beforeEach(() => {
-  const mockedUseStaticQuery = useStaticQuery as jest.Mock;
+  const mockedUseStaticQuery = useStaticQuery as jest.Mock<SiteTitleQuery>;
   mockedUseStaticQuery.mockImplementationOnce(() => ({
     site: {
       siteMetadata: {

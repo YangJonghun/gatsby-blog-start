@@ -3,7 +3,7 @@ import { Link } from 'gatsby';
 import styled from 'styled-components';
 
 interface HeaderProps {
-  siteTitle: string;
+  siteTitle?: string;
 }
 
 const HeaderWrapper = styled.header`

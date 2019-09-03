@@ -2,8 +2,10 @@ import React from 'react';
 import Helmet from 'react-helmet';
 import { useStaticQuery, graphql } from 'gatsby';
 
+import { SiteMetaDataQuery } from '../graphqlTypes';
+
 const GET_META_DATA = graphql`
-  query {
+  query SiteMetaData {
     site {
       siteMetadata {
         title
@@ -24,7 +26,7 @@ interface SeoProps {
 }
 
 const SEO: React.FC<SeoProps> = ({ description = '', lang = 'en', meta = [], title }) => {
-  const { site } = useStaticQuery(GET_META_DATA);
+  const { site } = useStaticQuery<SiteMetaDataQuery>(GET_META_DATA);
 
   const metaDescription = description || site.siteMetadata.description;
 

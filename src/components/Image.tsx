@@ -2,6 +2,8 @@ import React from 'react';
 import { useStaticQuery, graphql } from 'gatsby';
 import Img from 'gatsby-image';
 
+import { PlaceHolderImgQuery } from '../graphqlTypes';
+
 /*
  * This component is built using `gatsby-image` to automatically serve optimized
  * images with lazy loading and reduced file sizes. The image is loaded using a
@@ -14,7 +16,7 @@ import Img from 'gatsby-image';
  */
 
 const LOAD_PLACEHOLDER_IMG = graphql`
-  query {
+  query PlaceHolderImg {
     placeholderImage: file(relativePath: { eq: "gatsby-astronaut.png" }) {
       childImageSharp {
         fluid(maxWidth: 300) {
@@ -26,8 +28,9 @@ const LOAD_PLACEHOLDER_IMG = graphql`
 `;
 
 const Image = () => {
-  const data = useStaticQuery(LOAD_PLACEHOLDER_IMG);
-  return <Img fluid={data.placeholderImage.childImageSharp.fluid} />;
+  const { placeholderImage } = useStaticQuery<PlaceHolderImgQuery>(LOAD_PLACEHOLDER_IMG);
+
+  return <Img fluid={placeholderImage.childImageSharp.fluid} />;
 };
 
 export default Image;
