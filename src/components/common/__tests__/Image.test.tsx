@@ -3,7 +3,7 @@ import { render } from '@testing-library/react';
 import { useStaticQuery } from 'gatsby';
 
 import Image from '../Image';
-import { PlaceHolderImgQuery } from '../../graphqlTypes';
+import { PlaceHolderImgQuery } from '../../../graphqlTypes';
 
 beforeEach(() => {
   const mockedUseStaticQuery = useStaticQuery as jest.Mock<PlaceHolderImgQuery>;
@@ -15,7 +15,7 @@ beforeEach(() => {
           aspectRatio: 1,
           sizes: `100 200 300`,
           src: `pretend-i-am-a-base64-encoded-image`,
-          srcSet: `asdfasdf`,
+          srcSet: `meaninglessSrcForTest`,
         },
       },
     },

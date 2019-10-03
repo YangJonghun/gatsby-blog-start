@@ -1,8 +1,8 @@
 import React from 'react';
 import { useStaticQuery, graphql } from 'gatsby';
-import Img from 'gatsby-image';
+import Img, { GatsbyImageProps } from 'gatsby-image';
 
-import { PlaceHolderImgQuery } from '../graphqlTypes';
+import { PlaceHolderImgQuery } from '../../graphqlTypes';
 
 /*
  * This component is built using `gatsby-image` to automatically serve optimized
@@ -27,7 +27,7 @@ const LOAD_PLACEHOLDER_IMG = graphql`
   }
 `;
 
-const Image = () => {
+const Image: React.FC<GatsbyImageProps> = () => {
   const { placeholderImage } = useStaticQuery<PlaceHolderImgQuery>(LOAD_PLACEHOLDER_IMG);
 
   return <Img fluid={placeholderImage.childImageSharp.fluid} />;

@@ -4,7 +4,7 @@ import { useStaticQuery } from 'gatsby'; // mocked
 
 import Layout from '../Layout';
 
-import { SiteTitleQuery } from '../../graphqlTypes';
+import { SiteTitleQuery } from '../../../graphqlTypes';
 
 beforeEach(() => {
   const mockedUseStaticQuery = useStaticQuery as jest.Mock<SiteTitleQuery>;

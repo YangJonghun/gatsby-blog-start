@@ -60,8 +60,7 @@
     "lint": "eslint --ignore-path .gitignore . --ext ts,tsx,js,jsx",
     "generate": "graphql-codegen",
     "pretype-check": "yarn generate",
-    "prelint": "yarn generate",
-    "pretest": "yarn generate"
+    "prelint": "yarn generate"
   },
   "husky": {
     "hooks": {

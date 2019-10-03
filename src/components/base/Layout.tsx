@@ -4,7 +4,7 @@ import styled from 'styled-components';
 
 import Header from './Header';
 
-import { SiteTitleQuery } from '../graphqlTypes';
+import { SiteTitleQuery } from '../../graphqlTypes';
 
 const GET_SITE_TITLE = graphql`
   query SiteTitle {
