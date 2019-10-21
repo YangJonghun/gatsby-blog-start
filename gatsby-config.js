@@ -7,6 +7,7 @@ module.exports = {
     author: `@gatsbyjs`,
   },
   plugins: [
+    'my-custom-codegen',
     `gatsby-plugin-react-helmet`,
     {
       resolve: `gatsby-source-filesystem`,

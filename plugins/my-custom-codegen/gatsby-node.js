@@ -1,0 +1,8 @@
+"use strict";
+
+var _interopRequireDefault = require("@babel/runtime/helpers/interopRequireDefault");
+
+var _onPostBootstrap = _interopRequireDefault(require("./gatsby_api/onPostBootstrap"));
+
+exports.onPostBootstrap = _onPostBootstrap.default;
+//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9nYXRzYnktbm9kZS50cyJdLCJuYW1lcyI6WyJleHBvcnRzIiwib25Qb3N0Qm9vdHN0cmFwIl0sIm1hcHBpbmdzIjoiOzs7O0FBQUE7O0FBRUFBLE9BQU8sQ0FBQ0MsZUFBUixHQUEwQkEsd0JBQTFCIiwic291cmNlc0NvbnRlbnQiOlsiaW1wb3J0IG9uUG9zdEJvb3RzdHJhcCBmcm9tICcuL2dhdHNieV9hcGkvb25Qb3N0Qm9vdHN0cmFwJztcblxuZXhwb3J0cy5vblBvc3RCb290c3RyYXAgPSBvblBvc3RCb290c3RyYXA7XG4iXX0=

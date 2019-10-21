@@ -92,5 +92,11 @@ module.exports = {
         '@typescript-eslint/no-explicit-any': 'off',
       },
     },
+    {
+      files: ['**/codegen/*'],
+      rules: {
+        'require-jsdoc': 'off',
+      },
+    },
   ],
 };

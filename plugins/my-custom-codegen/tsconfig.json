@@ -1,0 +1,30 @@
+{
+  "compilerOptions": {
+    "module": "commonjs",
+    "target": "es6",
+    "lib": [
+      "dom",
+      "dom.iterable",
+      "es2019"
+    ],
+    "declaration": true,
+    "outDir": "./",
+    "rootDir": "./src",
+    "strict": true,
+    "esModuleInterop": true,
+    "moduleResolution": "node",
+    "types": [
+      "node"
+    ],
+    "baseUrl": "./src"
+  },
+  "files": [
+    "src/declarations.d.ts"
+  ],
+  "exclude": [
+    "./node_modules/*",
+  ],
+  "include": [
+    "./src"
+  ]
+}

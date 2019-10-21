@@ -1,0 +1,9 @@
+{
+    "presets": [
+        "babel-preset-gatsby-package",
+        "@babel/typescript"
+    ],
+    "plugins": [
+        "@babel/proposal-object-rest-spread"
+    ]
+}

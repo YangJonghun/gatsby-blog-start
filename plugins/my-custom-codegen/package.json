@@ -1,0 +1,71 @@
+{
+  "name": "my-custom-codegen",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Jonghun Yang <jhaugusty@gmail.com>",
+  "repository": {
+    "type": "git"
+  },
+  "license": "ISC",
+  "scripts": {
+    "build": "tsc --emitDeclarationOnly && babel src --out-dir ./ --extensions \".ts,.tsx\" --source-maps inline"
+  },
+  "dependencies": {
+    "@graphql-codegen/core": "^1.8.1",
+    "@graphql-codegen/plugin-helpers": "^1.8.1",
+    "@graphql-codegen/typescript": "^1.8.1",
+    "@graphql-codegen/typescript-operations": "^1.8.1",
+    "chalk": "^2.4.2",
+    "chokidar": "^3.2.2",
+    "common-tags": "^1.8.0",
+    "cosmiconfig": "^5.2.1",
+    "debounce": "^1.2.0",
+    "graphql": "^14.5.8",
+    "graphql-tag-pluck": "^0.8.6",
+    "indent-string": "^4.0.0",
+    "is-glob": "^4.0.1",
+    "is-valid-path": "^0.1.1",
+    "listr": "^0.14.3",
+    "listr-update-renderer": "^0.5.0",
+    "log-symbols": "^3.0.0",
+    "log-update": "^3.3.0",
+    "prettier": "1.18.2",
+    "ts-log": "^2.1.4"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.6.4",
+    "@babel/core": "^7.6.4",
+    "@babel/node": "^7.6.3",
+    "@babel/plugin-proposal-object-rest-spread": "^7.6.2",
+    "@babel/preset-typescript": "^7.6.0",
+    "@types/common-tags": "^1.8.0",
+    "@types/cosmiconfig": "^5.0.3",
+    "@types/debounce": "^1.2.0",
+    "@types/is-glob": "^4.0.1",
+    "@types/listr": "^0.14.2",
+    "@types/node": "^12.11.1",
+    "babel-preset-gatsby-package": "^0.2.9",
+    "ts-node": "^8.4.1",
+    "typescript": "^3.6.4"
+  },
+  "keywords": [
+    "gql",
+    "generator",
+    "code",
+    "types",
+    "interfaces",
+    "graphql",
+    "codegen",
+    "apollo",
+    "node",
+    "typescript",
+    "ts",
+    "types",
+    "d.ts",
+    "typings",
+    "gatsby",
+    "gatsby-plugin",
+    "gatsby-plugin-typescript",
+    "plugin"
+  ]
+}
